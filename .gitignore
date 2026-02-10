@@ -1,1 +1,13 @@
-*
+1.FM_high
+2.FM_medium
+3.FM_low
+4.AFM1_high
+5.AFM1_medium
+6.AFM1_low
+7.AFM2_high
+8.AFM2_mediium
+9.AFM2_low
+10.random_high
+11.random_medium
+12.random_low
+0.common_inputs/POTCAR
