@@ -120,10 +120,12 @@ def format_magmom_lines(mag_parts, per_line=8):
     lines = []
     for i in range(0, len(mag_parts), per_line):
         chunk = "   ".join(mag_parts[i : i + per_line])
+        is_last = i + per_line >= len(mag_parts)
+        suffix = "" if is_last else " \\"
         if i == 0:
-            lines.append(f"MAGMOM = {chunk}")
+            lines.append(f"MAGMOM = {chunk}{suffix}")
         else:
-            lines.append(f"         {chunk}")
+            lines.append(f"         {chunk}{suffix}")
     return lines
 
 
