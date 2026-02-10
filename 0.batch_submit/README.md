@@ -34,3 +34,15 @@ TOTAL=505 BATCH_SIZE=10 CONCURRENCY=1 POLL_SECONDS=60 bash auto_submit_afm1_batc
 - 自动脚本会依次提交 high/medium/low 三个数组
 - 每批次会等待三组全部完成后再进入下一批
 - 如果希望后台运行，可配合 nohup 或 tmux 使用
+
+## nohup 日志
+
+```bash
+nohup bash /fs1/home/liummm3/WORK/chenguangming/1.spingnn/1.dft_calculations/01.raw_datasets/FeNi_550_sampling/0.batch_submit/auto_submit_afm1_batches.sh > auto_submit.log 2>&1 &
+```
+
+查看日志：
+
+```bash
+tail -f auto_submit.log
+```
